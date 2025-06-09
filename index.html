@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="popup">
-        <input type="checkbox" id="close" class="checkbox1"/>
+    <div class="popup _hidden">
+        <input type="checkbox" id="close" class="checkbox-close">
         <div class="form-container">
             <form class="form-feedback">
                 <label for="close" class="close-button">
-                    <img src="svg/form-x.svg" class="close-icon">
+                    <img src="svg/form-x.svg" class="close-icon" alt="close icon">
                 </label>
                 <h3 class="page-title">ваш фидбек</h3>
                 <label for="select" class="form-label">Как часто вы заходите на сайт?</label>
@@ -111,7 +111,7 @@
                 
             </div>
         </section>
-        <section class="main-section">
+        <div class="main-section">
             <div class="post-list">
                 <article class="post">
                     <img src="images/last-post1.jpg" alt="morning beach" class="post-image">
@@ -170,7 +170,7 @@
                             <span class="date">10 июня 2019</span>
                             <span class="autor">Неизвестный автор</span>
                         </div>
-                        <p class="post-text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
+                        <p class="post-text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, <br> химию и микробиологию еды.</p>
                     </div>
                 </article>
                 <article class="post">
@@ -277,7 +277,7 @@
                     </ul>
                 </div>
             </aside>
-        </section>
+        </div>
         <section class="products-section">
             <h2 class="page-title products-title">Наши изделия</h2>
             <div class="products-list">
@@ -290,8 +290,8 @@
                                 <a href="#1" class="product-link">здесь</a>.
                             </p>
                             <div class="price-container">
-                                <span class="price old-price">1000 &#8381</span>
-                                <span class="price new-price">800 &#8381</span>
+                                <span class="price old-price">1000 &#8381;</span>
+                                <span class="price new-price">800 &#8381;</span>
                                 <a class="buttons shop-link">в магазин</a>
                             </div>
                         </div>
@@ -304,7 +304,7 @@
                                 <a href="#2" class="product-link">весенняя серия постов</a> в блоге и несколько подкастов.
                             </p>
                             <div class="price-container">
-                                <span class="price new-price">3500 &#8381</span>
+                                <span class="price new-price">3500 &#8381;</span>
                                 <a class="buttons shop-link">в магазин</a>
                             </div>
                         </div>
@@ -317,15 +317,14 @@
                                 <a href="#3" class="product-link">«Как сделать рамку из подручных средств за 30 минут»</a>
                             </p>
                             <div class="price-container">
-                                <span class="price old-price">500 &#8381</span>
-                                <span class="price new-price">400 &#8381</span>
+                                <span class="price old-price">500 &#8381;</span>
+                                <span class="price new-price">400 &#8381;</span>
                                 <a class="buttons shop-link">в магазин</a>
                             </div>
                         </div>
                     </article>
                 </div>
             </div>
-
         </section>
     </main>
     <footer class="page-footer">
