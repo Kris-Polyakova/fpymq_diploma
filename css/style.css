@@ -19,6 +19,10 @@ body {
     z-index: 3;
 }
 
+._hidden {
+    visibility: hidden;
+}
+
 .form-container {
     align-items: center;
     display: flex;
@@ -54,7 +58,7 @@ body {
     z-index: 1;
 }
 
-.checkbox1 {
+.checkbox-close {
     display: none;
 }
 
@@ -65,7 +69,7 @@ body {
     width: 18px;
 }
 
-.checkbox1:checked + .form-container {
+.checkbox-close:checked + .form-container {
     display: none;
 }
 
@@ -167,7 +171,7 @@ body {
     background-size: cover;
     box-sizing: border-box;
     display: block;
-    height: 450px;
+    min-height: 450px;
     position: relative;
     text-align: center;
     z-index: 0;
@@ -196,7 +200,7 @@ body {
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    max-width: 1170px;
 }
 
 .header-logo {
@@ -237,9 +241,7 @@ body {
     font-weight: 600;
     line-height: 75px;
     margin: auto;
-    padding-left: 485px;
-    padding-right: 485px;
-    padding-top: 103px;
+    padding: 103px 485px 128px 485px;
     text-transform: uppercase;
 }
 
@@ -285,7 +287,7 @@ body {
 .trend-item {
     display: flex;
     flex-direction: column;
-    height: 320px;
+    min-height: 320px;
     justify-content: flex-end;
     margin-right: 4px;
     margin-top: 4px;
@@ -311,7 +313,7 @@ body {
 .trend-container {
     border: 3px solid rgba(181, 159, 91, 0.6);
     box-sizing: border-box;
-    margin: 0 21px 16px 21px;
+    margin: 16px 21px 16px 21px;
     padding: 34px 31px 31px 31px;
 }
 
@@ -371,14 +373,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 246px;
-    margin-right: 246px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 64px;
+    max-width: 1170px;
 }
 
 .post-list {
     flex-grow: 1;
     flex-shrink: 1;
+    min-width: 899px;
 }
 
 .post {
@@ -631,12 +635,17 @@ body {
     top: 14px;
 }
 
+.products-section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+}
+
 .products-title {
     margin-top: 0;
 }
 
 .products-list {
-    height: 440px;
     margin-top: 27px;
     width: 100%;
 }
@@ -645,19 +654,14 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 440px;
     justify-content: flex-start;
-    margin-left: 245px;
-    margin-right: 245px;
 }
 
 .product {
     box-sizing: border-box;
     flex-direction: column;
-    height: 100%;
     justify-items: center;
     margin-right: 63px;
-    position: relative;
     width: calc((100% / 3) - 42px);
 }
 
@@ -675,13 +679,11 @@ body {
 
 .product-text {
     border: 3px solid rgba(181, 159, 91, 0.6);
-    bottom: 0;
     box-sizing: border-box;
-    left: 0;
+    margin-top: -32px;
+    min-height: 267px;
     padding-left: 20px;
     padding-right: 20px;
-    position: absolute;
-    top: 172px;
     width: 100%;
 }
 
@@ -702,6 +704,7 @@ body {
 .price-container {
     box-sizing: border-box;
     height: 49px;
+    margin-bottom: 26px;
     margin-top: 26px;
     position: relative;
     width: 100%;
