@@ -34,7 +34,7 @@
                         Нет
                       </label>
                 </div>
-                <label for="textarea" class="form-label">Расскажите, какой контент вы хотели бы видеть <br> на нашем сайте?</label>
+                <label for="textarea" class="form-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</label>
                 <textarea class="field-feedback form-fields" id="textarea" placeholder="Может, больше рецептов?"></textarea>
                 <button class="buttons submit-button" type="submit">Отправить</button>
             </form>
@@ -45,6 +45,7 @@
             <div class="menu-container">
                 <img src="svg/noemi-logo.svg" class="header-logo" alt="logo">
                 <nav class="menu">
+                    <button class="menu-button"></button>
                     <ul class="menu-list">
                         <li class="menu-item">
                             <a href="#0" class="menu-link">Главная</a>
@@ -57,8 +58,7 @@
                     </ul>
                 </nav>
             </div>
-            <h1 class="header-title">Блог о творчестве, спорте,
-                и образе жизни</h1>
+            <h1 class="header-title">Блог о творчестве, спорте, и образе жизни</h1>
         </div>
     </header>
     <main class="page-main">
@@ -149,7 +149,7 @@
                         <ul class="categories">
                             <li class="category">Music</li>
                         </ul>
-                        <h2 class="article-title post-title">Лучшие музыкальные фестивали этого лета</h2>
+                        <h2 class="article-title post-title">Лучшие музыкальные фестивали  этого лета</h2>
                         <div class="post-info">
                             <span class="date">10 июня 2019</span>
                             <span class="autor">Неизвестный автор</span>
@@ -170,7 +170,7 @@
                             <span class="date">10 июня 2019</span>
                             <span class="autor">Неизвестный автор</span>
                         </div>
-                        <p class="post-text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, <br> химию и микробиологию еды.</p>
+                        <p class="post-text">Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.</p>
                     </div>
                 </article>
                 <article class="post">
@@ -283,7 +283,11 @@
             <div class="products-list">
                 <div class="products-container">
                     <article class="product">
-                        <img src="images/shop-item-desk1.jpg" alt="printed pillow" class="product-image">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/shop-item-mobile1.jpg">
+                            <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet1.jpg">
+                            <img src="images/shop-item-desk1.jpg" alt="printed pillow" class="product-image">
+                        </picture>
                         <div class="product-text">
                             <h3 class="article-title product-title">Подушки на диван</h3>
                             <p class="post-text">Набор из двух подушек с модными принтами. Видео о создании 
@@ -297,7 +301,11 @@
                         </div>
                     </article>
                     <article class="product">
-                        <img src="images/shop-item-desk2.jpg" alt="toy rabbit" class="product-image">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/shop-item-mobile2.jpg">
+                            <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet2.jpg">
+                            <img src="images/shop-item-desk2.jpg" alt="toy rabbit" class="product-image">
+                        </picture>
                         <div class="product-text">
                             <h3 class="article-title product-title">Кукла «Зайчик»</h3>
                             <p class="post-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена 
@@ -310,7 +318,11 @@
                         </div>
                     </article>
                     <article class="product">
-                        <img src="images/shop-item-desk3.jpg" alt="hexagonal frame" class="product-image">
+                        <picture>
+                            <source media="(max-width: 640px)" srcset="images/shop-item-mobile3.jpg">
+                            <source media="(min-width: 641px) and (max-width: 1199px)" srcset="images/shop-item-tablet3.jpg">
+                            <img src="images/shop-item-desk3.jpg" alt="hexagonal frame" class="product-image">
+                        </picture>
                         <div class="product-text">
                             <h3 class="article-title product-title">Шестиугольная рамка</h3>
                             <p class="post-text">Необычная рамка для украшения дома из видео  
@@ -329,11 +341,17 @@
     </main>
     <footer class="page-footer">
         <div class="footer-container logo-container">
-            <div class="logo-place">
-                <img src="svg/001-dribbble.svg" alt="dribbble" class="logo dribbble">
-                <img src="svg/002-pinterest.svg" alt="pinterest" class="logo pinterest">
-                <img src="svg/003-tumblr.svg" alt="tumblr" class="logo tumblr">
-            </div>
+            <ul class="logo-place">
+                <li class="socials-logo">
+                    <img src="svg/001-dribbble.svg" alt="dribbble" class="logo">
+                </li>
+                <li class="socials-logo">
+                    <img src="svg/002-pinterest.svg" alt="pinterest" class="logo">
+                </li>
+                <li class="socials-logo">
+                    <img src="svg/003-tumblr.svg" alt="tumblr" class="logo">
+                </li>
+            </ul>
         </div>
         <div class="footer-container copyright-container">
             
